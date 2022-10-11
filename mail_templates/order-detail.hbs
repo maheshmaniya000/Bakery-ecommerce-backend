@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order detail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        @font-face {
+            font-family: 'CustomFont';
+            src: url(https://staging.olsenbakehouse.com/fonts/Marion-Regular.ttf);
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'CustomFont';
+            src: url(https://staging.olsenbakehouse.com/fonts/Marion-Bold.ttf);
+            font-weight: bold;
+        }
+
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* GMAIL BLUE LINKS */
+        u+#body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* SAMSUNG MAIL BLUE LINKS */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Universal styles for links and stuff */
+        a {
+            color: #229efd;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fd6350;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: #fd6350 !important;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px !important;
+            }
+
+            .mobile {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <!-- Preview text for the inbox -->
+    {{!-- <div style="display: none; max-height: 0; overflow: hidden;">
+        This will be displayed underneath the subject line. Use it wisely.
+    </div> --}}
+
+    <!--[if (gte mso 9)|(IE)]>
+		<table cellspacing="0" cellpadding="0" border="0" width="600" align="center" role="presentation"><tr><td>
+		<![endif]-->
+
+    <div
+        style="background-color: #f7f7f7; color: #000000; font-family: CustomFont; font-size: 18px; line-height: 36px; margin: 0 auto; max-width: 600px; padding: 40px 20px 40px 20px;">
+
+
+        <!-- Logo image -->
+        <center>
+            <img src="https://assets-olsen-bake-house.s3-ap-southeast-1.amazonaws.com/images/olsen-horizontal-logo.jpeg"
+                alt="" width="100%" border="0" style="border-radius: 0px; display: block; margin: 20px auto 40px auto;">
+        </center>
+
+        <!-- Two columns -->
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+            <!-- // 2-COLUMN SCAFFOLD [CENTERING, FLUID] -->
+            <tr>
+                <td align="center" height="100%" valign="top" width="100%">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                        <tr>
+                        <td align="center" valign="top" width="600">
+                        <![endif]-->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                        style="max-width:600px;">
+                        <tr>
+                            <td align="center" valign="top" style="font-size:0;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                    <tr>
+                                    <td align="left" valign="top" width="300">
+                                    <![endif]-->
+                                {{!-- <div
+                                    style="display:inline-block; max-width:50%; min-width:300px; vertical-align:top; width:100%;"
+                                    class="mobile">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                        style="max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top"
+                                                style="font-size: 30px; line-height: 38px; text-align: left;">
+                                                <h1 style="font-size: 30px; margin: 0;">Olsen Bakehouse</h1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div> --}}
+                                <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    <td align="left" valign="top" width="300">
+                                    <![endif]-->
+                                <div style="display:inline-block; min-width:300px; vertical-align:top; width:100%;"
+                                    class="mobile">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                        style="max-width:600px;">
+                                        <tr>
+                                            <td align="left" valign="top"
+                                                style="font-size: 16px; line-height: 38px; text-align: left;">
+                                                <h2 style="font-size: 16px; margin: 0 0; text-transform: uppercase;">
+                                                    Order #{{orderNo}}</h2>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                </td>
+            </tr>
+            <!-- 2-COLUMN SCAFFOLD [CENTERING, FLUID] // -->
+        </table>
+
+
+        <!-- Hero image -->
+        <!-- <img alt="A cheerful looking mailbox in front of green plants and flowers." src="images/hero.jpg" width="600" border="0" style="border-radius: 4px; display: block; margin: 20px auto 20px auto; max-width: 100%; min-width: 100px; width: 100%;"> -->
+
+        {{#if delivering}}
+			{{#if isHourSpecific}}
+				 <p style="margin: 0 0 20px 0;">
+					Hi {{name}}, <br /><br />
+					Your order has been scheduled for delivery on {{deliveryDate}}. <br /> <br />
+
+					We'll be sending a dedicated driver in the hour that you've selected, as such kindly have someone available at the address to receive the bakes! Please also ensure that the right recipient mobile contact is provided for easy coordination during delivery. <br /> <br />
+
+					Our bakes will see you soon, hope you'll enjoy them as much as we do! <br /><br />
+
+					Love, <br />
+					Olsen Bakehouse
+				</p>
+            {{else if isFlexiTime}}
+                <p style="margin: 0 0 20px 0;">
+					Hi {{name}}, <br /><br />
+					Your order has been scheduled for delivery on {{deliveryDate}}, between {{specificTime}}. <br /> <br />
+
+                    We'd love to make sure your order is delivered fuss-free whilst keeping you &amp; your recipient informed;<br/><br/>
+
+                    Please expect an email from our delivery partner, Axon Fresh via delivery@axonfresh.com in the morning of the delivery day. In it you will receive an estimated 2-3hr delivery window as well as a url to track your order.<br/><br/>
+
+                    Likewise an SMS notification will also be sent to the provided recipient's mobile, with the same info so as to expect the delivery. As such, please ensure the right contact details is provided for smooth coordination!<br/><br/>
+
+					Our bakes will see you soon, hope you'll enjoy them as much as we do! <br /><br />
+
+					Love, <br />
+					Olsen Bakehouse
+				</p>
+            {{else}}
+				 <p style="margin: 0 0 20px 0;">
+					Hi {{name}}, <br /><br />
+					Your order has been scheduled for delivery on {{deliveryDate}}. <br /> <br />
+
+                    We'd love to make sure your order is delivered fuss-free whilst keeping you &amp; your recipient informed;<br/><br/>
+
+                    Please expect an email from our delivery partner, Axon Fresh via delivery@axonfresh.com in the morning of the delivery day. In it you will receive an estimated 2-3hr delivery window as well as a url to track your order.<br/><br/>
+
+                    Likewise an SMS notification will also be sent to the provided recipient's mobile, with the same info so as to expect the delivery. As such, please ensure the right contact details is provided for smooth coordination!<br/><br/>
+
+					Our bakes will see you soon, hope you'll enjoy them as much as we do! <br /><br />
+
+					Love, <br />
+					Olsen Bakehouse
+				</p>
+			{{/if}}
+
+        {{else if cancelled}}
+        Hi {{name}}, <br /><br />
+        Your order has been cancelled. <br /> <br />
+
+        We'll be in touch with refund details within 3 business days. <br /> <br />
+
+        Hope to bake for you again next time! <br /> <br />
+
+        Love, <br />
+        Olsen Bakehouse
+        {{else if completed}}
+        Hi {{name}}, <br><br>
+        Your order is completed on {{deliveryDate}}. <br><br>
+        Thanks for having us bake for you, till next time!<br><br>
+
+        Love, <br>
+        Olsen Bakehouse
+        {{else if collectable}}
+        Hi {{name}}, <br><br>
+        We're getting your order ready for collection on {{deliveryDate}}. <br><br>
+        You can pick up your order at our shop anytime between {{storePickupTime}}. Shop address is 301 Joo Chiat Rd Singapore 427552. <br><br>
+        Our bakes will see you soon, hope you'll enjoy them as much as we do!<br><br>
+
+        Love, <br>
+        Olsen Bakehouse
+        {{else if isStorePickup}}
+        Hi {{name}}, <br><br>
+        Your order has been confirmed. We're getting your order ready for collection on {{deliveryDate}}. <br><br>
+        Our bakes will see you soon, hope you'll enjoy them as much as we do!<br><br>
+
+        Love, <br>
+        Olsen Bakehouse
+        {{else if isDelivery}}
+        Hi {{name}}, <br><br>
+        Your order has been confirmed. We're getting your order ready for delivery on {{deliveryDate}}. <br><br>
+        Our bakes will see you soon, hope you'll enjoy them as much as we do!<br><br>
+
+        Love, <br>
+        Olsen Bakehouse
+        {{else}}
+        {{!-- <p style="margin: 0;">Hi {{name}}, {{label}}.</p>
+        <p style="margin: 0 0 20px 0; font-weight: bold;">{{dateLabel}} date: {{deliveryDate}}</p> --}}
+        {{/if}}
+        <!-- Body copy -->
+
+
+        <!-- Button -->
+        <!-- CTA generated by buttons.com -->
+        <!-- <div style="margin: 60px 0 60px 0; text-align: center;"> -->
+        <!--[if mso]>
+				<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://thebetter.email" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fillcolor="#229efd">
+			    <w:anchorlock/>
+			    <center>
+				<![endif]-->
+        <!-- <a class="button" href="http://thebetter.email" style="background-color:#229efd;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:60px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">This is a button</a> -->
+        <!--[if mso]>
+			    </center>
+				</v:roundrect>
+				<![endif]-->
+        <!-- </div> -->
+
+
+        <!-- CTA generated by buttons.com -->
+        <div style="margin: 20px 0 20px 0; padding-bottom: 30px; border-bottom: 1px solid  lightgray;">
+            <!--[if mso]>
+						<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href={{ WEBSITE_URL }} style="height:40px;v-text-anchor:middle;width:100px;" arcsize="10%" strokecolor="#d7c9b2" fillcolor="#7e5000">
+							<w:anchorlock/>
+							<center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">View
+                your order</center>
+						</v:roundrect>
+					<![endif]-->
+
+            <a href={{ WEBSITE_URL }}
+                style="background-color:#7e5000;border:1px solid #d7c9b2;border-radius:4px;color:#ffffff;display:inline-block;font-family:CustomFont;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">View
+                your order</a>
+        </div>
+
+        <h3 style="font-weight: normal; font-size: 20px; margin: 0;">Order summary</h3>
+
+        <!-- Order items -->
+        <table style="text-align:left;border-spacing:0;border-collapse:collapse;margin:0 auto;" width="100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <table style="width:100%;border-spacing:0;border-collapse:collapse;">
+                            <tbody>
+                                {{#each items}}
+                                {{#if first}}
+                                <tr style="width:100%">
+                                    {{else}}
+                                <tr
+                                    style="width:100%;border-top-width:1px;border-top-color:#e5e5e5;border-top-style:solid">
+                                    {{/if}}
+                                    <td style="padding-top:15px">
+                                        <table style="border-spacing:0;border-collapse:collapse">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img align="left" width="60" height="60"
+                                                            style="margin-right:15px;border-radius:8px;border:1px solid #e5e5e5"
+                                                            src="{{image}}" class="CToWUd">
+                                                    </td>
+                                                    <td style="width:100%">
+                                                        <span
+                                                            style="font-size:16px;font-weight:600;line-height:1.4;color:#555">{{name}}
+                                                            ×
+                                                            {{quantity}}</span><br>
+                                                        {{#if candles}}
+                                                        <p
+                                                            style="font-size:14px;color:#999;line-height:150%;margin:0px 0">
+                                                            Candles (standard size): {{candles}} </p>
+                                                        {{/if}}
+                                                        {{#if knife}}
+                                                        <p
+                                                            style="font-size:14px;color:#999;line-height:150%;margin:0px 0">
+                                                            Cake Knife: {{knife}} </p>
+                                                        {{/if}}
+                                                        {{#if textOnCake}}
+                                                        <p
+                                                            style="font-size:14px;color:#999;line-height:150%;margin:0px 0">
+                                                            Cake Text: {{textOnCake}} </p>
+                                                        {{/if}}
+                                                        {{#if variant}}
+                                                        <span style="font-size:14px;color:#999">{{variant}}</span><br>
+                                                        {{/if}}
+                                                        {{#each list}}
+                                                            <p style="font-size:14px;color:#999;line-height:150%;margin:0px 0">{{this}}</p>
+                                                        {{/each}}
+                                                    </td>
+                                                    <td style="white-space:nowrap">
+                                                        <p align="right"
+                                                            style="color:#555;line-height:150%;font-size:16px;font-weight:600;margin:0 0 0 15px">
+                                                            {{total}} </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                        <table
+                            style="width:100%;border-spacing:0;border-collapse:collapse;margin-top:15px;border-top-width:1px;border-top-color:#e5e5e5;border-top-style:solid">
+                            <tbody>
+                                <tr>
+                                    <td style="width:40%"></td>
+                                    <td>
+                                        <table
+                                            style="width:100%;border-spacing:0;border-collapse:collapse;margin-top:20px">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:5px 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            <span style="font-size:16px">Bakes</span>
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:5px 0">
+                                                        <strong
+                                                            style="font-size:16px;color:#555">{{productsFee}}</strong>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:5px 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            <span style="font-size:16px">Delivery fee</span>
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:5px 0">
+                                                        <strong
+                                                            style="font-size:16px;color:#555">{{deliveryFee}}</strong>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:5px 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            <span style="font-size:16px">Subtotal</span>
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:5px 0">
+                                                        <strong style="font-size:16px;color:#555">{{subtotal}}</strong>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:5px 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            {{#if code}}
+                                                            <span style="font-size:16px">Promo - {{code}}</span>
+                                                            {{else}}
+                                                            <span style="font-size:16px">Promo</span>
+                                                            {{/if}}
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:5px 0">
+                                                        <strong style="font-size:16px;color:#555">-
+                                                            {{discount}}</strong>
+                                                    </td>
+                                                </tr>
+                                                {{#if peakDaySurcharge}}
+                                                <tr>
+                                                    <td style="padding:5px 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            <span style="font-size:16px">Peak day surcharge</span>
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:5px 0">
+                                                        <strong style="font-size:16px;color:#555">
+                                                            {{peakDaySurcharge}}</strong>
+                                                    </td>
+                                                </tr>
+                                                {{/if}}
+                                            </tbody>
+                                        </table>
+                                        <table
+                                            style="width:100%;border-spacing:0;border-collapse:collapse;margin-top:20px;border-top-width:2px;border-top-color:#e5e5e5;border-top-style:solid">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:20px 0 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            <span style="font-size:16px">Total</span>
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:20px 0 0">
+                                                        <strong style="font-size:24px;color:#555">{{total}}
+                                                            SGD</strong>
+                                                    </td>
+                                                </tr>
+                                                {{#if refund}}
+                                                <tr>
+                                                    <td style="padding:5px 0">
+                                                        <p style="color:#777;line-height:1.2em;font-size:16px;margin:0">
+                                                            <span style="font-size:16px">Refund</span>
+                                                        </p>
+                                                    </td>
+                                                    <td align="right" style="padding:5px 0">
+                                                        <strong style="font-size:16px;color:#555">
+                                                            -&nbsp;{{refund}}</strong>
+                                                    </td>
+                                                </tr>
+                                                {{/if}}
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Info -->
+                        <table
+                            style="width:100%;border-spacing:0;border-collapse:collapse;border-top-width:1px;border-top-color:#e5e5e5;border-top-style:solid">
+                            <tbody>
+                                <tr>
+                                    <td style="padding:40px 0">
+                                        <center>
+                                            <table
+                                                style="width:560px;text-align:left;border-spacing:0;border-collapse:collapse;margin:0 auto">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <label
+                                                                style="font-weight:500;font-size:16px;color:#555;">Please
+                                                                double check your gift message here: <span
+                                                                    style="color:#777;line-height:150%;font-size:16px;font-weight:normal;">{{giftMessage}}</span></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label
+                                                                style="font-weight:500;font-size:16px;color:#555;">{{instructionLabel}}: <span
+                                                                    style="color:#777;line-height:150%;font-size:16px;font-weight:normal;">{{note}}</span></label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table
+                                                style="width:560px;text-align:left;border-spacing:0;border-collapse:collapse;margin:0 auto">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <table
+                                                                style="width:100%;border-spacing:0;border-collapse:collapse">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="padding-bottom:40px;width:50%;vertical-align: top;">
+                                                                            <h4
+                                                                                style="font-weight:500;font-size:16px;color:#555;margin:0 0 5px">
+                                                                                Delivery Method</h4>
+                                                                            <p
+                                                                                style="color:#777;line-height:150%;font-size:16px;margin:0 15px 0 0;">
+                                                                                {{deliveryMethod}}<br>
+                                                                                {{#if address}}
+                                                                                {{address}} <br>
+                                                                                {{/if}}
+                                                                                {{#if buildingUnitNo}}
+                                                                                {{buildingUnitNo}} <br>
+                                                                                {{/if}}
+                                                                                {{#if postalCode}}
+                                                                                {{postalCode}} <br>
+                                                                                {{/if}}
+                                                                            </p>
+                                                                            <!-- <p style="color:#777;line-height:150%;font-size:16px;margin:15px 0 0">
+																					<b>Delivery date: Friday, September 18, 2020</b>
+																				</p> -->
+                                                                        </td>
+                                                                        <td
+                                                                            style="padding-bottom:40px;width:50%; vertical-align: top;">
+                                                                            <h4
+                                                                                style="font-weight:500;font-size:16px;color:#555;margin:0 0 5px">
+                                                                                Delivery Date</h4>
+                                                                            <p
+                                                                                style="color:#777;line-height:150%;font-size:16px;margin:0">
+                                                                                {{deliveryDate}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                            <table
+                                                                style="width:100%;border-spacing:0;border-collapse:collapse">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="padding-bottom:40px;width:50%;vertical-align: top;">
+                                                                            <h4
+                                                                                style="font-weight:500;font-size:16px;color:#555;margin:0 0 5px">
+                                                                                Sender Info</h4>
+                                                                            <p
+                                                                                style="color:#777;line-height:150%;font-size:16px;margin:0 15px 0 0;">
+                                                                                {{senderName}}<br>
+                                                                                {{senderMobileNo}}<br>
+                                                                                {{senderEmail}}
+                                                                            </p>
+                                                                        </td>
+                                                                        <td
+                                                                            style="padding-bottom:40px;width:50%; vertical-align: top;">
+                                                                            <h4
+                                                                                style="font-weight:500;font-size:16px;color:#555;margin:0 0 5px">
+                                                                                Recipient Info</h4>
+                                                                            <p
+                                                                                style="color:#777;line-height:150%;font-size:16px;margin:0 15px 0 0;">
+                                                                                {{recipientName}}<br>
+                                                                                {{recipientMobileNo}}<br>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                            <table
+                                                                style="width:100%;border-spacing:0;border-collapse:collapse">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="padding-bottom:40px;width:50%;vertical-align: top;">
+                                                                            <h4
+                                                                                style="font-weight:500;font-size:16px;color:#555;margin:0 0 5px">
+                                                                                Payment Info</h4>
+                                                                            <p
+                                                                                style="color:#777;line-height:150%;font-size:16px;margin:0 15px 0 0;">
+                                                                                {{paymentType}}
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+		</td></tr></table>
+		<![endif]-->
+
+</body>
+
+</html>

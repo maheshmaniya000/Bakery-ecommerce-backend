@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to Olsen Bakehouse!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        @font-face {
+            font-family: 'CustomFont';
+            src: url(https://staging.olsenbakehouse.com/fonts/Marion-Regular.ttf);
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'CustomFont';
+            src: url(https://staging.olsenbakehouse.com/fonts/Marion-Bold.ttf);
+            font-weight: bold;
+        }
+
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* GMAIL BLUE LINKS */
+        u+#body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* SAMSUNG MAIL BLUE LINKS */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Universal styles for links and stuff */
+        a {
+            color: #229efd;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fd6350;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: #fd6350 !important;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            .mobile {
+                width: 100% !important;
+            }
+
+            h1 {
+                font-size: 24px !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <!-- Preview text for the inbox -->
+    {{!-- <div style="display: none; max-height: 0; overflow: hidden;">
+        This will be displayed underneath the subject line. Use it wisely.
+    </div> --}}
+
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tr>
+            <td align="center">
+                <table border="0" class="mobile" cellpadding="0" cellspacing="0" role="presentation" width="600"
+                    style="background-color: #f7f7f7; color: #000000; font-family: CustomFont; font-size: 18px; line-height: 36px; margin: 0; padding: 0;">
+
+                    <!-- Logo image -->
+                    <tr>
+                        <td align="center" style="padding: 20px 0px;">
+                            <img src="https://assets-olsen-bake-house.s3-ap-southeast-1.amazonaws.com/images/olsen-horizontal-logo.jpeg"
+                                alt="" width="100%" border="0"
+                                style="border-radius: 40px; display: block; margin: 0 auto;">
+                        </td>
+                    </tr>
+
+                    <!-- Headline -->
+                    {{!-- <tr>
+                        <td style="padding: 0 20px 20px;">
+                            <h1 style="margin: 0; font-size: 22px; text-align: left;">Welcome to Olsen Bakehouse!</h1>
+                        </td>
+                    </tr> --}}
+
+                    <!-- Hero Image -->
+                    <!-- <tr>
+							<td style="padding: 20px;">
+								<img src="images/hero.jpg" alt="Some descriptive alternative text" width="600" border="0" style="border-radius: 4px; display: block; max-width: 100%; min-width: 100px; width: 100%;">
+							</td>
+						</tr> -->
+
+                    <!-- Body copy -->
+                    <tr>
+                        <td style="padding: 20px;">
+                            <p style="margin: 0 0 20px 0;">You&apos;ve activated your customer account. Next time you
+                                shop with us, log in for faster checkout.</p>
+                        </td>
+                    </tr>
+
+                    <!-- Button -->
+                    <tr>
+                        <td style="padding: 0 0 0 20px;">
+                            <!-- CTA generated by buttons.com -->
+
+                            <div>
+                                <!--[if mso]>
+										<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href={{ WEBSITE_URL }} style="height:40px;v-text-anchor:middle;width:100px;" arcsize="10%" strokecolor="#d7c9b2" fillcolor="#7e5000">
+											<w:anchorlock/>
+											<center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Visit our store</center>
+										</v:roundrect>
+									<![endif]-->
+
+                                <a href={{ WEBSITE_URL }}
+                                    style="background-color:#7e5000;border:1px solid #d7c9b2;border-radius:4px;color:#ffffff;display:inline-block;font-family:CustomFont;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;mso-hide:all;">Visit
+                                    our store</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Footer information: Always include an unsubscribe link! -->
+                    <tr>
+                        <td style="color: #888888; font-size: 16px; margin: 60px 0 0 0; padding: 4em 20px;">
+                            <p style="margin: 0 0 20px 0;">If you have any questions, reply to this email or contact us
+                                at <a href="mailto:hello@olsenbakehouse.com">hello@olsenbakehouse.com</a></p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
