@@ -199,7 +199,7 @@ export class AuthService {
 
 			if (!customer?.active) {
 				throw new BadRequestException(
-					'Account has been locked, please send us an email at hello@olsenbakehouse.com for assistance.',
+					'Account has been locked, please send us an email at hello@Onlinebakehouse.com for assistance.',
 				);
 			}
 		} else if (accountType === AccountType.ADMIN) {
@@ -207,7 +207,7 @@ export class AuthService {
 
 			if (!admin?.active) {
 				throw new BadRequestException(
-					'Account has been locked, please send us an email at hello@olsenbakehouse.com for assistance.',
+					'Account has been locked, please send us an email at hello@Onlinebakehouse.com for assistance.',
 				);
 			}
 		}
@@ -296,7 +296,7 @@ export class AuthService {
 
 			if (!customer.active) {
 				throw new BadRequestException(
-					'Account has been locked, please send us an email at hello@olsenbakehouse.com for assistance.',
+					'Account has been locked, please send us an email at hello@Onlinebakehouse.com for assistance.',
 				);
 			}
 
@@ -313,7 +313,7 @@ export class AuthService {
 
 			if (!admin.active) {
 				throw new BadRequestException(
-					'Account has been locked, please send us an email at hello@olsenbakehouse.com for assistance.',
+					'Account has been locked, please send us an email at hello@Onlinebakehouse.com for assistance.',
 				);
 			}
 

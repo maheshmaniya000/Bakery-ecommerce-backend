@@ -180,7 +180,7 @@ export class AccountsService {
 				if (isValid) {
 					await this.mailerService.sendMail({
 						to: account.email,
-						subject: 'Welcome to Olsen Bakehouse!',
+						subject: 'Welcome to Online Bakehouse!',
 						template:
 							process.cwd() + '/mail_templates/' + 'welcome',
 						context: {

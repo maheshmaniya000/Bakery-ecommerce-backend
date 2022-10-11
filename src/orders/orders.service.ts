@@ -2226,9 +2226,9 @@ export class OrdersService implements OnModuleInit {
 				textOnCake: product.message,
 				knife: product.knifes > 0 ? 'Yes' : '',
 				image: product.itemName
-					? 'https://assets-olsen-bake-house.s3-ap-southeast-1.amazonaws.com/images/placeholder-image.png'
+					? 'https://assets-Online-bake-house.s3-ap-southeast-1.amazonaws.com/images/placeholder-image.png'
 					: product.product.mainImage ||
-					'https://assets-olsen-bake-house.s3-ap-southeast-1.amazonaws.com/images/placeholder-image.png',
+					'https://assets-Online-bake-house.s3-ap-southeast-1.amazonaws.com/images/placeholder-image.png',
 				total: numeral(product.price * product.quantity).format(
 					'$0.00',
 				),
@@ -2340,7 +2340,7 @@ export class OrdersService implements OnModuleInit {
 			note: order.note || '',
 			deliveryMethod: order.delivery.method?.needPostalCode
 				? order.delivery.method?.name
-				: `${order.delivery.method?.name} from Olsen Bakehouse`,
+				: `${order.delivery.method?.name} from Online Bakehouse`,
 			address: order.delivery.method?.needPostalCode
 				? (order.delivery.address as string).toLowerCase()
 				: `301 Joo Chiat Rd Singapore 427552`,
@@ -3208,7 +3208,7 @@ export class OrdersService implements OnModuleInit {
 		}
 
 		await this.mailerService.sendMail({
-			to: 'hello@olsenbakehouse.com',
+			to: 'hello@Onlinebakehouse.com',
 			subject: text,
 			template: process.cwd() + '/mail_templates/' + 'system-reports',
 			context: {
@@ -3272,7 +3272,7 @@ export class OrdersService implements OnModuleInit {
 			);
 
 			await this.mailerService.sendMail({
-				to: 'hello@olsenbakehouse.com',
+				to: 'hello@Onlinebakehouse.com',
 				subject: `Reports for ${nextday.format('DD/MM/YY')}`,
 				template: process.cwd() + '/mail_templates/' + 'system-reports',
 				context: {

@@ -21,17 +21,17 @@ async function bootstrap() {
 	if (process.env.NODE_ENV === 'staging') {
 		app.enableCors({
 			origin: [
-				'https://staging.olsenbakehouse.com',
-				'https://staging-cms.olsenbakehouse.com',
+				'https://staging.Onlinebakehouse.com',
+				'https://staging-cms.Onlinebakehouse.com',
 			],
 		});
 	} else if (process.env.NODE_ENV === 'production') {
 		app.enableCors({
 			origin: [
-				'https://v2.olsenbakehouse.com',
-				'https://www.olsenbakehouse.com',
-				'https://olsenbakehouse.com',
-				'https://cms.olsenbakehouse.com',
+				'https://v2.Onlinebakehouse.com',
+				'https://www.Onlinebakehouse.com',
+				'https://Onlinebakehouse.com',
+				'https://cms.Onlinebakehouse.com',
 			],
 		});
 
@@ -61,7 +61,7 @@ async function bootstrap() {
 	);
 
 	const options = new DocumentBuilder()
-		.setTitle('Olsen bake house')
+		.setTitle('Online bake house')
 		.setVersion('1.0')
 		.addBearerAuth()
 		.build();

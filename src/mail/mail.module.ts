@@ -28,7 +28,7 @@ import { MailService } from './mail.service';
 					},
 
 					defaults: {
-						from: `Olsen Bakehouse <${configService.get(
+						from: `Online Bakehouse <${configService.get(
 							'mail.from',
 						)}>`,
 						replyTo: configService.get('mail.replyTo'),

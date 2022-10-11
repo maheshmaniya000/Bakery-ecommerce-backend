@@ -23,7 +23,7 @@ export class PackingSlipService {
 			margin: 20,
 			info: {
 				Title: 'Packing Slip',
-				Author: 'Olsen Bakehouse',
+				Author: 'Online Bakehouse',
 			},
 			autoFirstPage: false,
 		});

@@ -44,7 +44,7 @@ export class StripeService {
 		const params: Stripe.PaymentIntentCreateParams = {
 			amount: parseInt(Number(amount * 100).toFixed(0), 10),
 			currency: 'SGD',
-			description: 'For Olsen Bakehouse order',
+			description: 'For Online Bakehouse order',
 			metadata: {
 				orderId: order._id.toString(),
 			},

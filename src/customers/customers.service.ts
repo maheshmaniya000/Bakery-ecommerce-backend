@@ -354,7 +354,7 @@ export class CustomersService {
 					knife: item.knifes || '',
 					image:
 						item.product.mainImage ||
-						'https://assets-olsen-bake-house.s3-ap-southeast-1.amazonaws.com/images/placeholder-image.png',
+						'https://assets-Online-bake-house.s3-ap-southeast-1.amazonaws.com/images/placeholder-image.png',
 				};
 			});
 

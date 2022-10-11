@@ -33,7 +33,7 @@ export class HitpayService {
 						order.customer.firstName +
 						' ' +
 						order.customer.lastName,
-					purpose: 'For Olsen bakehouse order',
+					purpose: 'For Online bakehouse order',
 					reference_number: order._id.toString(),
 					redirect_url: `${redirectUrl}checkout/${order._id}?success=true`,
 					webhook: webhookUrl,
